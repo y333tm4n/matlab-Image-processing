@@ -74,4 +74,6 @@ se = strel('disk',10);
 closedBW = imclose(img3,se);
 
 % Display the original image and the closed image.
-figure(6); imshowpair(img3, closedBW, 'montage'); title('Original Image and Closed Image');
+figure(6); imshowpair(img3, closedBW, 'montage'); title('Original Image and Closed Image'); 
+
+% add sample comment to test git
