@@ -45,6 +45,8 @@ dilatedI = imdilate(img,se);
 figure(4);
 imshowpair(img, dilatedI, 'montage'); title('Original Image and Dilated Image using Rolling Ball');
 
+
+% can be considered as added parameter 
 % 3. Opening
 % Opening is a morphological operation that consists of an erosion followed by a dilation.
 
@@ -61,6 +63,7 @@ openedBW = imopen(img2,se);
 figure(5);
 imshowpair(img2, openedBW, 'montage'); title('Original Image and Opened Image');
 
+% can be considered as an added parameter
 % 4. Closing
 % Closing is a morphological operation that consists of a dilation followed by an erosion.
 
