@@ -28,3 +28,16 @@ level = graythresh(gray_img);  % Compute the Otsu threshold
 BW = imbinarize(gray_img, level);  % Apply the threshold
 % Display the result
 figure(4); imshow(BW); title('Otsu''s Method');
+
+% 4. Median Thresholding: thresholding the image using median values
+% threshold the image using median thresholding
+median_threshold_img = gray_img > median(gray_img(:));
+% show the median thresholded image
+figure(5); imshow(median_threshold_img); title("Median Thresholding");
+
+% 5. Gaussian Thresholding: thresholding the image using Gaussian values
+% threshold the image using Gaussian thresholding
+gaussian_threshold_img = gray_img > mean(gray_img(:)) + 2*std(double(gray_img(:)));
+% show the Gaussian thresholded image
+figure(6); imshow(gaussian_threshold_img); title("Gaussian Thresholding");
+
